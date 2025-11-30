@@ -51,12 +51,12 @@ Shader "Unlit/Diffuse"
             float4 frag (v2f i) : SV_Target
             {
                 i.normal = normalize(i.normal);
-                float dotproduct = dot(_WorldSpaceLightPos0, i.normal);
+                float dotproduct = dot(float3(0,1,0), i.normal);
                 float sinIt = sin(_TimeValue * _Time.y + dotproduct);
                 float3 lerpIt = lerp(_Color, _Color2, sinIt);
 
                 float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos);
-                float3 halfvector = normalize(viewDirection + _WorldSpaceLightPos0);
+                float3 halfvector = normalize(viewDirection + float3(0,1,0));
                 float spec = pow(saturate(dot(i.normal, halfvector)), _Smoothness * 1000);
                 float3 final = spec + lerpIt;
                 return float4(final, 1);
