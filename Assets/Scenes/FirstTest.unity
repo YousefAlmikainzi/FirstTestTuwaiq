@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 259516615}
   - component: {fileID: 259516616}
   - component: {fileID: 259516617}
+  - component: {fileID: 259516618}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -377,6 +378,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSoundColliding
   playerCollide: {fileID: 8300000, guid: c54c94b3be71fd44085673fc8c956f0e, type: 3}
+--- !u!114 &259516618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259516609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a02bf4279037aa4481cafa9238a6fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResetGame
+  fallenPlayer: 0
 --- !u!1 &297033151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154424302247532022, guid: c47dc9526739c254ea4dfcde6ed5c96b, type: 3}
       propertyPath: m_Name
-      value: FIreBall
+      value: FireBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
