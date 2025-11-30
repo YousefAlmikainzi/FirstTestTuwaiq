@@ -8,7 +8,7 @@ public class ResetGame : MonoBehaviour
     [SerializeField] float fallenPlayer = 0;
     void OnTriggerEnter(Collider other)
     {
-        if ((other.gameObject.CompareTag("FireBall")))
+        if ((other.gameObject.CompareTag("FireBall")) || (other.gameObject.CompareTag("Enemy")))
         {
             SceneManager.LoadScene(0);
         }
