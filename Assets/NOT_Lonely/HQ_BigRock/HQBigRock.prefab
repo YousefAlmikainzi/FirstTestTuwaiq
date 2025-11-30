@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 490504}
   - component: {fileID: 3351334}
   - component: {fileID: 2393348}
-  - component: {fileID: 6465370}
+  - component: {fileID: 5443043260653589645}
   m_Layer: 0
   m_Name: HQBigRock
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90,8 +90,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6465370
-MeshCollider:
+--- !u!65 &5443043260653589645
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,7 +108,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e399af9d66682f149b2b761a48e7d46e, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 1.6511643, y: 0.73346794, z: 1.1472373}
+  m_Center: {x: 0.013894558, y: 0.33748537, z: -0.037684172}
