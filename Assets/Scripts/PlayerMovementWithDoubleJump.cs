@@ -14,6 +14,7 @@ public class PlayerMovementWithDoubleJump : MonoBehaviour
     float jump;
     bool grounded;
     bool jumpCheck = false;
+    bool wallCheck = false;
     int jumpsUsed = 0;
     void Start()
     {
@@ -26,7 +27,10 @@ public class PlayerMovementWithDoubleJump : MonoBehaviour
     void FixedUpdate()
     {
         readInput();
-        writeInputs();
+        if(!wallCheck)
+        {
+            writeInputs();
+        }
 
         if (grounded)
         {
@@ -39,7 +43,7 @@ public class PlayerMovementWithDoubleJump : MonoBehaviour
             jumpsUsed++;
             jumpCheck = false;
         }
-
+        wallCheck = false;
         grounded = false;
     }
     void readInput()
@@ -75,6 +79,11 @@ public class PlayerMovementWithDoubleJump : MonoBehaviour
     }
     void OnCollisionStay(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            wallCheck = true;
+            return;
+        }
         grounded = true;
     }
 }
