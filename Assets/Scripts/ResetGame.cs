@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// a script that checks if either the players has made contact with something kills them or if they have falling, so that the game can reset.
+/// </summary>
 public class ResetGame : MonoBehaviour
 {
     float deathFall;

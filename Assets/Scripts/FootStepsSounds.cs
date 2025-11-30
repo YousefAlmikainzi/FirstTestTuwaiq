@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// by using raycasting the footstep sound clip can be played approapriatly through some parameters
+/// </summary>
+
 public class FootStepsSounds : MonoBehaviour
 {
     public AudioClip footstepClip;

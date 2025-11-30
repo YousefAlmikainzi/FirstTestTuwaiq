@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// This script takes the agent component and transforms it to our desired position, AKA back and forth.
+/// </summary>
 public class BackForthNPC : MonoBehaviour
 {
     private NavMeshAgent agent;

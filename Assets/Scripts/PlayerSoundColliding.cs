@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// a check if a player collides with any of these to play a sound clip
+/// </summary>
 public class PlayerSoundColliding : MonoBehaviour
 {
     [SerializeField] AudioClip playerCollide;

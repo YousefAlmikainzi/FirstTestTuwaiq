@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// This script removes the cursor.
+/// Takes the mouse inputs and applies yaw and pitch so that a camera movement is created
+/// </summary>
 public class CameraMovement : MonoBehaviour
 {
     float pitch = 0.0f;

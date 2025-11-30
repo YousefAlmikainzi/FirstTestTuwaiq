@@ -8,6 +8,10 @@ public class FleeingEnemyAI : MonoBehaviour
     public float fleeDistance = 10f;
     public float safeDistance = 15f;
 
+    /// <summary>
+    /// This script takes the agent component and transforms it to our desired position.
+    /// We get to our desired position by referencing the player's transform so that the agent can escape from the player which is given two ranges for a range when they see the player and a range for how much should they escape.
+    /// </summary>
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();

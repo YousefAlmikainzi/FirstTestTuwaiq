@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// This script takes the agent component and transforms it to our desired position.
+/// We get to our desired position by referencing the player's transform.
+/// </summary>
 public class EnemyAI : MonoBehaviour
 {
     private NavMeshAgent agent;

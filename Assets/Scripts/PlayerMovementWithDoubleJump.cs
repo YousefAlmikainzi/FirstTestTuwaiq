@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// This script takes the player inputs and writes them back as output as in change in velocity as in movement.
+/// it also checks the jump every frame to accurately reads the players input for jumping.
+/// as well taking the camera as reference so we can move forward where the camera is pointing.
+/// </summary>
 public class PlayerMovementWithDoubleJump : MonoBehaviour
 {
     [SerializeField] float speed = 10.0f;

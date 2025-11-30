@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// script that reads the terrain and makes a uv out of it to sample a height map texture on it.
+/// </summary>
 public class TerrianHeights : MonoBehaviour
 {
     [SerializeField] Terrain myTerrian;
